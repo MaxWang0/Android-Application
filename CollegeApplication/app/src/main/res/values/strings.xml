@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CollegeApplication</string>
+    <string name="welcome_text">Welcome Students</string>
+    <string name="action_settings">Settings</string>
+    <string name ="view_text">To View currently enrolled students click here</string>
+    <string name="view_button">View enrolled students</string>
+    <string name="add_text">To add new registration click here</string>
+    <string name="add_button">New registration</string>
+    <string name="viewActivity_text">Currently enrolled Students</string>
+    <string name="newActivity_text">Enter new students details</string>
+    <string name="namefield_text">Name:</string>
+    <string name="emailfield_text">Email address:</string>
+    <string name="dobfield_text">Date of Birth:</string>
+    <string name="subButton_text">Submit</string>
+    <string name="canButton_text">Cancel</string>
+</resources>

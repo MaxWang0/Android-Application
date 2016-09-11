@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/newActivity_text" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/welcomeText"
+        android:layout_below="@+id/welcomeText"
+        android:layout_marginTop="14dp"
+        android:text="@string/namefield_text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameField"
+        android:layout_below="@+id/nameField"
+        android:layout_marginTop="36dp"
+        android:text="@string/emailfield_text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_below="@+id/nameText"
+        android:ems="10"
+        android:inputType="textPersonName" >
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/emailAddressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailText"
+        android:layout_below="@+id/emailText"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+        <requestFocus/>
+        </EditText>
+        <EditText
+        android:id="@+id/dobPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dobText"
+        android:layout_below="@+id/dobText"
+        android:layout_marginTop="15dp" 
+        android:ems="10"
+        android:inputType="textPersonName">
+        <requestFocus/>
+        </EditText>
+    <TextView
+        android:id="@+id/dobText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailAddressText"
+        android:layout_below="@+id/emailAddressText"
+        android:layout_marginTop="49dp"
+        android:text="@string/dobfield_text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+   <!-- <DatePicker
+        android:id="@+id/dobPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dobText"
+        android:layout_below="@+id/dobText"
+        android:layout_marginTop="15dp" />
+    -->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/dobPicker"
+        android:layout_below="@+id/dobPicker"
+        android:layout_marginBottom="87dp"
+        android:text="@string/subButton_text" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dobPicker"
+        android:layout_alignBottom="@+id/submit"
+        android:layout_toRightOf="@+id/submit"
+        android:text="@string/canButton_text" />
+    
+</RelativeLayout>
